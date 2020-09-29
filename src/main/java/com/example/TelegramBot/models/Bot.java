@@ -44,6 +44,7 @@ public class Bot extends TelegramLongPollingBot {
         } catch (TelegramApiException e) {
             log.log(Level.SEVERE, "Exception: ", e.toString());
         }
+        log.info("Message sent with text: " + s);
     }
 
     @Override
