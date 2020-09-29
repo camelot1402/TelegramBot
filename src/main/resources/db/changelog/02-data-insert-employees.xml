@@ -1,0 +1,5 @@
+<insert tableName="employee">
+    <column name="id" valueNumeric="1"/>
+    <column name="firstname" value="x"/>
+    <column name="lastname" value="y"/>
+</insert>

@@ -1,0 +1,15 @@
+<changeSet id="01" author="xy">
+
+    <createTable tableName="employee">
+        <column name="id" type="int">
+            <constraints nullable="false" primaryKey="true"/>
+        </column>
+        <column name="firstname" type="varchar(25)">
+            <constraints nullable="false"/>
+        </column>
+        <column name="lastname" type="varchar(25)">
+            <constraints nullable="false"/>
+        </column>
+    </createTable>
+
+</changeSet>
