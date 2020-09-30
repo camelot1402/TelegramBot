@@ -32,7 +32,7 @@ public class Bot extends TelegramLongPollingBot {
     /**
      * Метод для настройки сообщения и его отправки.
      * @param chatId id чата
-     * @param s Строка, которую необходимот отправить в качестве сообщения.
+     * @param s Строка, которую необходимо отправить в качестве сообщения.
      */
     public synchronized void sendMsg(String chatId, String s) {
         SendMessage sendMessage = new SendMessage();
@@ -44,7 +44,7 @@ public class Bot extends TelegramLongPollingBot {
         } catch (TelegramApiException e) {
             log.log(Level.SEVERE, "Exception: ", e.toString());
         }
-        log.info("Message sent with text: " + s);
+        log.fine("Message sent with text: " + s);
     }
 
     @Override
